@@ -15,7 +15,7 @@ def primes(number_of_primes):
 
             isPrime = True
 
-            for i in range (2, num):
+            for i in range (2, temp):
                 if temp % i == 0:
                     isPrime = False
 
