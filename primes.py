@@ -8,17 +8,21 @@ def primes(number_of_primes):
         raise ValueError("The Value Must Be Greater Than 0.")
 
     else:
-        num = 2
-        ctr = 0
+        temp = 2
+        count = 0
 
-        while ctr < number_of_primes:
-            prime = True
+        while count < number_of_primes:
+
+            isPrime = True
+
             for i in range (2, num):
-                if num % i == 0:
-                    prime = False
-            if prime:
-                list.append(num)
-                ctr += 1
+                if temp % i == 0:
+                    isPrime = False
 
-            num += 1
+            if isPrime:
+                list.append(num)
+                count += 1
+
+            temp += 1
+
     return list
