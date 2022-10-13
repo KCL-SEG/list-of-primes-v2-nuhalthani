@@ -20,7 +20,7 @@ def primes(number_of_primes):
                     isPrime = False
 
             if isPrime:
-                list.append(num)
+                list.append(temp)
                 count += 1
 
             temp += 1
